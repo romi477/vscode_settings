@@ -1,0 +1,78 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "odoo-13",
+            "type": "python",
+            "request": "launch",
+            "noDebug": true,
+            "python": "${command:python.interpreterPath}",
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
+            "program": "/opt/odoo/13/odoo-bin",
+            "args": [
+                "--config=${workspaceRoot}/odoo.conf",
+                "--update=quickbooks_intuit_online",
+            ],
+            "cwd": "${workspaceRoot}",
+        },
+        {
+            "name": "odoo-13-dubug",
+            "type": "python",
+            "request": "launch",
+            "python": "${command:python.interpreterPath}",
+            "stopOnEntry": false,
+            "stopOnPoints": true,
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
+            "program": "/opt/odoo/13/odoo-bin",
+            "args": [
+                "--config=${workspaceRoot}/odoo.conf",
+                "--update=_quickbooks_intuit_online",
+            ],
+            "cwd": "${workspaceRoot}",
+        },
+        {
+            "name": "shell-13",
+            "type": "python",
+            "request": "launch",
+            "noDebug": true,
+            "python": "${command:python.interpreterPath}",
+            "console": "integratedTerminal",
+            "program": "/opt/odoo/13/odoo-bin",
+            "args": [
+                "shell",
+                "--config=${workspaceRoot}/odoo.conf",
+                "--shell-interface=ipython",
+            ],
+        },
+        {
+            "name": "odoo-13-tests",
+            "type": "python",
+            "request": "launch",
+            "noDebug": true,
+            "stopOnEntry": false,
+            "stopOnPoints": true,
+            "python": "${command:python.interpreterPath}",
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
+            "program": "/opt/odoo/13/odoo-bin",
+            "args": [
+                "--config=${workspaceRoot}/odoo.conf",
+                "--test-enable",
+                "--test-tags=quickbooks_sync_online",
+                "--init=quickbooks_sync_online",
+                "--log-level=test",
+                "--stop-after-init",
+            ],
+            "cwd": "${workspaceRoot}",
+            "debugOptions": [
+                "RedirectOutput",
+            ],
+        },
+    ],
+}

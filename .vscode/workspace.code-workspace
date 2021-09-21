@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../../odoo/13"
+		}
+	],
+	"settings": {
+		"terminal.integrated.cwd": "${workspaceFolder}/quickbooks_intuit_online/",
+		"git.ignoreLimitWarning": true,
+	}
+}

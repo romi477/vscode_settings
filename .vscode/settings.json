@@ -1,0 +1,40 @@
+{
+    "python.defaultInterpreterPath": "/opt/odoo/13/venv13/bin/python3",
+    "python.pythonPath": "/opt/odoo/13/venv13/bin/python3",
+    "python.envFile": "${workspaceFolder}/.vscode/.env",
+      "python.autoComplete.extraPaths": [
+        "/opt/odoo/13/odoo",
+    ],
+    "python.autoComplete.addBrackets": true,
+    "python.terminal.activateEnvironment": true,
+    "python.analysis.extraPaths": [
+        "/opt/odoo/13/odoo"
+    ],
+    "python.analysis.completeFunctionParens": true,
+
+    "python.testing.pytestArgs": [
+        "--odoo-config=${workspaceRoot}/odoo.conf",
+        "--disable-pytest-warnings",
+        "${workspaceRoot}/quickbooks_intuit_online/quickbooks_sync_online",
+    ],
+
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+        "--max-line-length=100",
+        "--ignore=E123,E226,E24,E704,W503,W504"
+    ],
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintArgs": [
+        "--load-plugins=pylint_odoo",
+        "--valid_odoo_versions=13.0",
+        "-e",
+        "odoolint",
+        "--disable=C0116,C0114,C0115,C0302,E0611,E1101,W8113,W0212,C0103,W8115,W8120,W1201,W0201",
+    ],
+
+    "files.exclude": {
+        ".pytest_cache": true,
+    },
+}
+        
