@@ -30,6 +30,7 @@
             "console": "internalConsole",
             "internalConsoleOptions": "openOnSessionStart",
             "program": "/opt/odoo/13/odoo-bin",
+            "gevent": true,
             "args": [
                 "--config=${workspaceRoot}/odoo.conf",
                 "--update=_quickbooks_intuit_online",
@@ -61,6 +62,7 @@
             "console": "internalConsole",
             "internalConsoleOptions": "openOnSessionStart",
             "program": "/opt/odoo/13/odoo-bin",
+            "gevent": true,
             "args": [
                 "--config=${workspaceRoot}/odoo.conf",
                 "--test-enable",
