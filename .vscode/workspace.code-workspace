@@ -8,7 +8,9 @@
 		}
 	],
 	"settings": {
-		"terminal.integrated.cwd": "${workspaceFolder}/quickbooks_intuit_online/",
 		"git.ignoreLimitWarning": true,
+		"terminal.integrated.cwd": "erp",
+		"esbonio.server.enabled": true,
+		"esbonio.sphinx.confDir": "",
 	}
 }
