@@ -539,4 +539,7 @@
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "vscode-edge-devtools.mirrorEdits": true,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
 }
