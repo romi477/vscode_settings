@@ -1,6 +1,6 @@
 [
     {
-        "key": "ctrl+numpad_subtract",
+        "key": "ctrl+-",
         "command": "editor.action.addCommentLine",
         "when": "editorTextFocus && !editorReadonly"
     },
@@ -10,7 +10,7 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+numpad_add",
+        "key": "ctrl+=",
         "command": "editor.action.removeCommentLine",
         "when": "editorTextFocus && !editorReadonly"
     },
@@ -115,11 +115,11 @@
         "when": "debugState == 'running'"
     },
     {
-        "key": "ctrl+shift+numpad_subtract",
+        "key": "ctrl+shift+-",
         "command": "workbench.action.navigateBack",
     },
     {
-        "key": "ctrl+shift+numpad_add", 
+        "key": "ctrl+shift+=", 
         "command": "workbench.action.navigateForward",
     },
     {
@@ -176,4 +176,48 @@
         "key": "ctrl+k ctrl+k",
         "command": "workbench.action.debug.selectandstart"
     },
+    {
+        "key": "ctrl+m",
+        "command": "workbench.action.toggleActivityBarVisibility"
+    },
+    {
+        "key": "shift+alt+=",
+        "command": "workbench.action.zoomIn"
+    },
+    {
+        "key": "ctrl+=",
+        "command": "-workbench.action.zoomIn"
+    },
+    {
+        "key": "shift+alt+-",
+        "command": "workbench.action.zoomOut"
+    },
+    {
+        "key": "ctrl+-",
+        "command": "-workbench.action.zoomOut"
+    },
+    {
+        "key": "ctrl+shift+q",
+        "command": "workbench.files.action.collapseExplorerFolders"
+    },
+    {
+        "key": "ctrl+meta+left",
+        "command": "workbench.action.increaseViewWidth"
+    },
+    {
+        "key": "ctrl+meta+right",
+        "command": "workbench.action.decreaseViewWidth"
+    },
+    {
+        "key": "ctrl+shift+t",
+        "command": "workbench.view.extension.vscode-chatgpt-view-container"
+    },
+    {
+        "key": "alt+r",
+        "command": "python.execInTerminal-icon"
+    },
+    {
+        "key": "alt+d",
+        "command": "python.debugInTerminal"
+    }
 ]
